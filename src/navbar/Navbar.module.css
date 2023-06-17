@@ -1,0 +1,20 @@
+.Navbar {
+    min-height: 90vh;
+    background: lightblue;
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+}
+.link:last-child {
+    margin-top: 25px;
+}
+.link:active, .link:focus, .link:hover {
+    color: slateblue  ;
+}
+

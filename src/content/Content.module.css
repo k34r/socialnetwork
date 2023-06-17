@@ -1,0 +1,10 @@
+.Content {
+    grid-column: span 3;
+}
+.img {
+    width: 100%;
+}
+.routes_wrapper {
+    padding: 15px;
+}
+

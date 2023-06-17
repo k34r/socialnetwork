@@ -1,0 +1,9 @@
+.Header {
+    background: lightblue;
+    grid-column: span 4;
+}
+.header_ico {
+    display: block;
+    height: 50px;
+    margin: 10px;
+}
