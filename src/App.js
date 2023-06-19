@@ -4,15 +4,15 @@ import cls from "./App.module.css"
 import React from "react";
 import {BrowserRouter} from "react-router-dom";
 import Content from "./content/Content";
-import {state} from './redux';
+import {updateNewPostText} from "./redux";
 
-function App() {
+function App(props) {
     return (
         <BrowserRouter>
         <div className={cls.App}>
             <Header/>
             <Navbar/>
-            <Content state={state}/>
+            <Content state={props.state} addPost={props.addPost} updateNewPostText={props.updateNewPostText}/>
         </div>
         </BrowserRouter>
     );
