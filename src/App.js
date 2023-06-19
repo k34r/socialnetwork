@@ -4,6 +4,7 @@ import cls from "./App.module.css"
 import React from "react";
 import {BrowserRouter} from "react-router-dom";
 import Content from "./content/Content";
+import {state} from './redux';
 
 function App() {
     return (
@@ -11,7 +12,7 @@ function App() {
         <div className={cls.App}>
             <Header/>
             <Navbar/>
-            <Content/>
+            <Content state={state}/>
         </div>
         </BrowserRouter>
     );

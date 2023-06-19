@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className={cls.Navbar}>
                 <NavLink className={cls.link} to='/profile'>Профиль</NavLink>
                 <NavLink className={cls.link} to='/messages'>Сообщения</NavLink>
-                <NavLink className={cls.link} to='/news'>Новости</NavLink>
+                <NavLink className={cls.link} to='/'>Новости</NavLink>
                 <NavLink className={cls.link} to='/music'>Музыка</NavLink>
                 <NavLink className={cls.link} to='/settings'>Настройки</NavLink>
         </div>

@@ -1,14 +1,16 @@
 import React from 'react';
 import cls from "./Profile.module.css";
 
-const Profile = () => {
+
+
+const Profile = (props) => {console.log(props)
     return (
         <div>
-            <img className={cls.profile_avatar} alt='profile_ico' src={'https://i.pinimg.com/736x/46/2a/0b/462a0b54123bea84c00e86f3d734aad3.jpg'}/>
-            <p>Дмитрий К.</p>
-            <p>День рождения: 2 января</p>
-            <p>Город: Нижнепупинск</p>
-            <p>Образование: 3 класса церковно-приходской школы</p>
+            <img className={cls.profile_avatar} alt='profile_ico' src={props.profile[0].img}/>
+            <p>{props.profile[0].name}</p>
+            <p>{props.profile[0].birthday}</p>
+            <p>{props.profile[0].city}</p>
+            <p>{props.profile[0].education}</p>
         </div>
     );
 };
