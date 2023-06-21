@@ -5,11 +5,12 @@ const Messages = (props) => {
 
     let textarea = React.createRef();
     const onTextareaChange = () => {
-        props.updateNewPostText(textarea.current.value);
+        props.dispatch({type:'UPDATE-NEW-POST-TEXT'}, {text: textarea.current.value});
     }
 
     const buttonClick = () => {
-        props.addPost(textarea.current.value);
+       // props.addPost(textarea.current.value);
+        props.dispatch({type: 'ADD-POST'});
     }
 
     return (

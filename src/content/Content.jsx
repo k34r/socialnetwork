@@ -15,9 +15,7 @@ const Content = (props) => {
             <div className={cls.routes_wrapper}>
             <Routes>
                 <Route path={'/profile'} element={<Profile profile={props.state.profile}/>}></Route>
-                <Route path={'/messages'} element={<Messages posts={props.state.posts} addPost={props.addPost}
-                                                             newPostText={props.state.newPostText}
-                                                             updateNewPostText={props.updateNewPostText}/>}></Route>
+                <Route path={'/messages'} element={<Messages posts={props.state.posts} dispatch={props.dispatch}/>}></Route>
                 <Route path={'/'} element={<News/>}></Route>
                 <Route path={'/music'} element={<Music/>}></Route>
                 <Route path={'/settings'} element={<Settings/>}></Route>
