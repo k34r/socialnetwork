@@ -1,16 +1,17 @@
 import React from 'react';
 import cls from './Messages.module.css';
+import {addPostActionCreator, updateNewPostTextActionCreator} from "../../redux";
 
 const Messages = (props) => {
-
     let textarea = React.createRef();
     const onTextareaChange = () => {
-        props.dispatch({type:'UPDATE-NEW-POST-TEXT'}, {text: textarea.current.value});
+        props.dispatch(updateNewPostTextActionCreator(textarea.current.value))
+        ;
     }
 
     const buttonClick = () => {
        // props.addPost(textarea.current.value);
-        props.dispatch({type: 'ADD-POST'});
+        props.dispatch(addPostActionCreator());
     }
 
     return (
